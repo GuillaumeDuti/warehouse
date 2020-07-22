@@ -10,6 +10,7 @@ h1 {
     font-size: 3rem;
     text-transform: uppercase;
     color: #37cfa2;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -29,4 +30,29 @@ span {
 a {
     text-decoration: none;
     color: black;
+}
+
+a.btn, .btn {
+    background-color: #37cfa2;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    margin: 25px 0;
+    border: none;
+    padding: 15px 30px;
+
+}
+
+a.btn--large {
+    padding: 20px 40px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+a.btn, .btn, p {
+    font-family:"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
 }

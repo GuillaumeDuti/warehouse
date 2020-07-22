@@ -1,0 +1,27 @@
+footer {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    p {
+        font-size: 1rem;
+        color: grey;
+        line-height: 2rem;
+        letter-spacing: 0.05rem;
+    }
+    span {
+        color: grey;
+    }
+}
+
+.footer__info {
+    > div {
+        max-width: 30%;
+    }
+    padding: 50px 0 100px 0;
+    margin-bottom: 50px;
+    border-bottom: rgba(255, 255, 255, 0.479) solid 1px;
+}
+
+.footer__copyrights {
+    width: 100%;
+    text-align: center;
+}

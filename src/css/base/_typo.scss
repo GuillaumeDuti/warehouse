@@ -16,15 +16,19 @@ h1 {
 h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 h3 {
     font-size: 1rem;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 span {
     text-transform: capitalize;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 a {
@@ -53,6 +57,15 @@ p {
     font-weight: 300;
 }
 
-a.btn, .btn, p {
+a.btn, .btn, p, span, label {
     font-family:"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+}
+
+.section--title {
+    margin-bottom: 50px;
+}
+
+label {
+    margin-top: 10px;
+    display: inline-block;
 }

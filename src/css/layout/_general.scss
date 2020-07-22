@@ -1,0 +1,31 @@
+html {
+    overflow-x: hidden;
+}
+
+html, body, header, main, footer {
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.flex--h {
+    display: flex;
+}
+
+.flex--v {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex--v--center {
+    justify-content: center;
+}
+
+.align--center {
+    align-items: center;
+}

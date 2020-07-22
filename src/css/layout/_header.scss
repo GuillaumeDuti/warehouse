@@ -1,0 +1,19 @@
+header {
+    border-bottom: rgb(0, 0, 0) 0.5px solid;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: white;
+}
+
+nav.container {
+    padding: 20px 0;
+    justify-content: space-between;
+    text-transform: uppercase;
+    li {
+        margin-left: 20px;
+    }
+}
+
+.nav__logo {
+    font-size: 1.8rem;
+}

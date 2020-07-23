@@ -3,6 +3,7 @@
 #hero {
     height: 100vh;
     position: relative;
+    text-align: center;
     h1 {
         color: white;
     }
@@ -14,7 +15,7 @@
 
 .swiper-wrapper {
     width: 100%; height: 100%;
-    .swiper-slide {
+    .homepage__hero__slide {
         width: 100%; height: 100%;
         &::before {
             content: "";
@@ -52,9 +53,21 @@
 // properties ///////////////////////
 
 #properties {
+    .houses {
+        flex-wrap: wrap;
+        width: 100%;     
+    }
     .house--single {
-        margin-left:80px;
         position: relative;
+        width: 30%;
+        @media screen and(max-width: 1000px){
+            width: 45%;
+            margin: 30px 0;
+        }
+        @media screen and(max-width: 750px){
+            width: 80%;
+            margin: 30px auto;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -79,9 +92,7 @@
                 padding: 20px 40px;
             }
         }
-        &:nth-child(1) {
-            margin-left: 0;
-        }
+        
         .house--info {
             padding: 20px 0;
             transition: all ease-in-out .2s;
@@ -95,9 +106,23 @@
 // agents ///////////////////////////
 
 #agents {
+    .agents {
+        max-width: 100%;
+        flex-wrap: wrap;
+        
+    }
     .agent--single {
         background-color: #37cfa2;
-        margin-left:30px;
+        width: 30%;
+        @media screen and(max-width: 1000px){
+            width: 45%;
+            margin: 30px 0;
+        }
+        @media screen and(max-width: 750px){
+            width: 80%;
+            margin: 30px auto;
+        }
+        
         img {
             transition: all ease-in-out .2s;
         }
@@ -106,12 +131,11 @@
                 transform: scale(1.1);
             }
         }
-        &:nth-child(1) {
-            margin-left: 0;
-        }
+        
         .agent--info {
             padding: 15px 15px;
         }
+        
     }
 
 }
@@ -143,9 +167,16 @@
 .step {
     text-align: center;
     position: relative;
-    margin-left:50px;
+    width: 30%;
+        @media screen and(max-width: 1000px){
+            width: 45%;
+            margin: 30px 0;
+        }
+        @media screen and(max-width: 750px){
+            width: 80%;
+            margin: 30px auto;
+        }
         &:nth-child(1) {
-            margin-left: 0;
             &::before {
                 display: none;
             }
@@ -163,6 +194,9 @@
         background-color: black;
         left: 0; top: 50%;
         transform: translateX(-75px);
+        @media screen and(max-width: 1000px){
+            display: none;
+        }
     }
 }
 
@@ -170,9 +204,14 @@
 // news /////////////////////////////
 
 .news--single {
-    margin-left:30px;
-        &:nth-child(1) {
-            margin-left: 0;
+    width: 30%;
+        @media screen and(max-width: 1000px){
+            width: 45%;
+            margin: 30px 0;
+        }
+        @media screen and(max-width: 750px){
+            width: 80%;
+            margin: 30px auto;
         }
 }
 
@@ -208,6 +247,12 @@
     width: 70%;
     margin-right: 50px;
     align-items: flex-start;
+        
+        @media screen and(max-width: 750px){
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
     > div {
         width: 100%;
         &:nth-last-child(1) {

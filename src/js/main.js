@@ -15,3 +15,13 @@ window.addEventListener('scroll', function() {
 
 // menu burger //////////////////////////////////////
 
+var monMenuBurger   = document.querySelector('.menu--burger');
+var monMenuDroite   = document.querySelector('nav ul');
+var monMenuDroiteX  = document.querySelector('.menu--burger--close');
+
+monMenuBurger.addEventListener('click', function() {
+    monMenuDroite.classList.add("active");
+})
+monMenuDroiteX.addEventListener('click', function() {
+    monMenuDroite.classList.remove("active");
+})

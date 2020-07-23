@@ -1,0 +1,44 @@
+.article__hero__slide {
+    position: relative;
+    font-weight: 300;
+    span {
+       color: white;
+       text-transform: uppercase;
+       font-size: 1.5rem; 
+       letter-spacing: 0.2rem;
+       position: relative;
+    }
+    .article--date {
+        margin-right: 10px;
+        padding-right: 15px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%; right: 0;
+            background-color: white;
+            width: 5px; height: 5px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+#article {
+    .info--article--sidebar {
+        width: 30%;
+    }
+}
+
+.article--part {
+    width: 60%;
+        p{
+            &:nth-of-type(1) {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
+            margin-bottom: 25px;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.2rem;
+        }
+}

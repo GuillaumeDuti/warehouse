@@ -1,12 +1,6 @@
 #hero.hero__properties {
     max-height: 40vh ;
     position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0; bottom: 0; left: 0; right: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.6278886554621849) 0%, rgba(0,0,0,0.17130602240896353) 100%);
-    }
     .container {
         justify-content: center;
         display: flex;

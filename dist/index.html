@@ -4,8 +4,10 @@
         <title>Warehouse</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Oswald:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
         <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body>
@@ -26,13 +28,27 @@
         <main>
 
             <!-- section hero -->
-            <section id="hero" style="background: url('/img/hero_2.jpg') no-repeat center/cover;">
-                <div class="container">
-                    <div class="content hero__content flex--v flex--v--center align--center">
-                        <h1>Find Your Perfect Property For Your Home</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate ad vero ullam laudantium rem sint placeat consequuntur?</p>
-                        <a href="#" class="btn btn--large">get started</a>
-                    </div>                    
+            <section id="hero" class="swiper-container" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url('/img/hero_2.jpg') no-repeat center/cover;">
+                        <div class="container">
+                            <div class="content hero__content flex--v flex--v--center align--center">
+                                <h1>Find Your Perfect Property For Your Home</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate ad vero ullam laudantium rem sint placeat consequuntur?</p>
+                                <a href="#" class="btn btn--large">get started</a>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background: url('/img/hero_2.jpg') no-repeat center/cover;">
+                        <div class="container">
+                            <div class="content hero__content flex--v flex--v--center align--center">
+                                <h1>Find Your Perfect Property For Your Home</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate ad vero ullam laudantium rem sint placeat consequuntur?</p>
+                                <a href="#" class="btn btn--large">get started</a>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
@@ -376,7 +392,23 @@
                 </div>
             </div>
         </footer>
-        
+            <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            centeredSlides: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            });
+        </script>
     <script src="js/main.min.js"></script>
     </body>
 </html>

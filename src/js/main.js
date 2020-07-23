@@ -1,7 +1,17 @@
-$("nav a").click(function(e){
-    e.preventDefault();
-    var lien = $(this).attr('href');
-    console.log(lien);
-    $('.content').empty();
-    $('.content').load(lien);
-});
+// effet nav ///////////////////////////////////////
+
+
+var maNav           = document.querySelector('header');
+
+
+window.addEventListener('scroll', function() {
+    var monscrolltop    = window.pageYOffset;
+    if (monscrolltop > 10) {
+        maNav.classList.add("active");
+    } else {
+        maNav.classList.remove("active");
+    }
+})
+
+// menu burger //////////////////////////////////////
+

@@ -1,15 +1,32 @@
 header {
-    border-bottom: rgb(0, 0, 0) 0.5px solid;
+    border-bottom: rgb(255, 255, 255) 0.5px solid;
     position: fixed;
     top: 0; left: 0;
-    background-color: white;
     z-index: 10;
+    transition: all ease-in-out .3s;
+    &.active {
+        border-bottom: none;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px;
+        nav.container {
+            padding: 10px 0;
+        }
+        a {
+            color: black;
+        }
+    }
+    a {
+        color: white;
+        font-weight: 300;
+    }
 }
 
 nav.container {
     padding: 20px 0;
     justify-content: space-between;
     text-transform: uppercase;
+    transition: all ease-in-out .3s;
+
     li {
         margin-left: 20px;
     }
@@ -17,4 +34,32 @@ nav.container {
 
 .nav__logo {
     font-size: 1.8rem;
+}
+
+// burger animation /////////////////////////
+@media screen and(max-width: 1000px){
+    nav ul {
+        background-color: white;
+        position: fixed; 
+        top: 0; right: 0; bottom: 0;
+        transform: translateX(100%);
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+        &::before {
+            content: "x";
+            position: absolute;
+            font-size: 1.5rem;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            top: 30px; right: 30px;
+        }
+        li {
+            padding: 20px 50px;
+        }
+        a {
+            font-size: 1.4rem;
+        }
+    }
+
 }

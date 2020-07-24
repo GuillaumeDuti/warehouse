@@ -5,6 +5,7 @@
         justify-content: center;
         display: flex;
         .hero__content {
+            position: relative;
             justify-content: center;
             margin-top: 20px;
             z-index: 10;
@@ -21,6 +22,24 @@
             }
         }
 }
+
+.arrow--down {
+    position: absolute;
+    width: 50px; height: 50px;
+    bottom: -60px; left: 50%;
+    transform: rotate(180deg) translate(50%, -70%) ;
+    transition: all ease-in-out .2s;
+    i {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    &:hover {
+        bottom: -70px;
+    }
+}
+
+// content ///////////////////////////////////////////
 
 .single__property__content {
     

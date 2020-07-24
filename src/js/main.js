@@ -25,3 +25,19 @@ monMenuBurger.addEventListener('click', function() {
 monMenuDroiteX.addEventListener('click', function() {
     monMenuDroite.classList.remove("active");
 })
+
+// arrow up //////////////////////////////////////////
+
+var maFlecheRetour      = document.querySelector('.arrow--up');
+var monHauteurFenetre   = window.innerHeight;
+
+console.log(monHauteurFenetre);
+
+window.addEventListener('scroll', function() {
+    var monscrolltop    = window.pageYOffset;
+    if (monscrolltop > (monHauteurFenetre + 200)) {
+        maFlecheRetour.classList.add("active");
+    } else {
+        maFlecheRetour.classList.remove("active");
+    }
+})

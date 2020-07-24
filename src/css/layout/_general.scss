@@ -74,6 +74,11 @@ input, textarea {
         font-family:"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
         color: #a3a3a3;
     }
+    &:focus {
+    border: 2px solid #37cfa2;
+    outline-offset: 0px !important;
+    outline: none !important;
+    }
 }
 
 textarea {
@@ -85,6 +90,6 @@ textarea {
         content: "";
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.6278886554621849) 0%, rgba(0,0,0,0.17130602240896353) 100%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.719) 0%, rgba(0, 0, 0, 0.37) 100%);
     }
 }

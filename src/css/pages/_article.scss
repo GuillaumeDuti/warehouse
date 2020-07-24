@@ -41,4 +41,33 @@
             letter-spacing: 0.1rem;
             line-height: 1.2rem;
         }
+    .article--tax {
+        margin: 50px 0;
+        margin-bottom: 25px;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.2rem;
+        a{
+            color: #37cfa2;
+        }
+    }
+}
+
+.champ--recherche {
+    background-color: #ebebeb;
+    padding: 0px 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.agent--img--square {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info--article--sidebar {
+    p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
 }
